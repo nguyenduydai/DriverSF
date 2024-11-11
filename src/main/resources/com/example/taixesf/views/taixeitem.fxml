@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="item" prefHeight="300.0" prefWidth="150.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.taixesf.TaiXeItemController">
+   <children>
+      <ImageView fx:id="anh" fitHeight="100.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+         <VBox.margin>
+            <Insets bottom="10.0" left="15.0" right="10.0" top="20.0" />
+         </VBox.margin>
+      </ImageView>
+      <Label fx:id="id" layoutX="10.0" layoutY="230.0" prefHeight="35.0" prefWidth="150.0" text="id">
+         <VBox.margin>
+            <Insets bottom="5.0" top="5.0" />
+         </VBox.margin>
+      </Label>
+      <Label fx:id="ten" prefHeight="35.0" prefWidth="150.0" text="ten">
+         <VBox.margin>
+            <Insets bottom="5.0" top="5.0" />
+         </VBox.margin>
+      </Label>
+      <Label fx:id="sdt" prefHeight="35.0" prefWidth="150.0" text="sdt">
+         <VBox.margin>
+            <Insets bottom="5.0" top="5.0" />
+         </VBox.margin>
+      </Label>
+      <Label fx:id="kv" layoutX="10.0" layoutY="211.0" prefHeight="30.0" prefWidth="150.0" text="khuvuc">
+         <VBox.margin>
+            <Insets bottom="5.0" top="5.0" />
+         </VBox.margin></Label>
+   </children>
+</VBox>

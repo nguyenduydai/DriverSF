@@ -1,0 +1,102 @@
+.dangnhap{
+    -fx-background-color:#ff5b0a;
+}
+.button-dn{
+    -fx-background-color: #ffe400;
+    -fx-border-color:WHITE;
+}
+.buttom-dk{
+    -fx-background-color: #ee4e2e;
+}
+.chu{
+    -fx-text-fill: #ee4e2e;
+}
+.nen-dk{
+    -fx-background-color: #fdd6b7;
+}
+.nen-avatar{
+    -fx-background-color:#f9ec22;
+    -fx-background-radius: 0 0 50 50;
+}
+.anh-avatar {
+    -fx-background-radius: 50%;
+    -fx-clip: circle(50% at 50% 50%);
+    -fx-effect: dropShadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 10);
+}
+.nen-left{
+    -fx-background-color:#1f3469;
+}
+.nen-top{
+    -fx-background-color:#ed4e30;
+    -fx-background-radius: 0 0 50 50;
+}
+.nen-avatar-t{
+    -fx-background-color:#f9ec22;
+}
+.thoat{
+    -fx-color:#faf8f6;
+     -fx-background-color:#faf8f6;
+}
+.duoi{
+    -fx-background-color:#e96331;
+}
+.lv{
+    -fx-background-color:#1f3469;
+    -fx-background-radius: 50 50 50 50;
+}
+.button-left{
+    -fx-background-color:#1f3469;
+     -fx-text-fill: WHITE;
+      -fx-color:WHITE;
+}
+.button-left:hover{
+        -fx-background-color:#1f3469;
+        -fx-border-color:WHITE;
+        -fx-text-fill:#f9ec22;
+        -fx-border-width:0px 0px 0px 4px;
+        -fx-font-weight: bold;
+        -fx-stroke-width: 4px;
+}
+.button-left2{
+    -fx-background-color:#1f3469;
+     -fx-text-fill: #000000;
+      -fx-color:WHITE;
+}
+.button-left2:hover{
+        -fx-background-color:#1f3469;
+        -fx-border-color:WHITE;
+        -fx-text-fill:#f9ec22;
+        -fx-border-width:0px 0px 0px 4px;
+        -fx-font-weight: bold;
+        -fx-stroke-width: 4px;
+}
+.button:hover .circle {
+    -fx-stroke-width: 4px;
+}
+.button-admin{
+ -fx-background-color:#ffffff;
+}
+.button-admin:hover{
+        -fx-border-color:#1f3469;
+        -fx-border-width:0px 0px 4px 0px;
+}
+.slideritem{
+    -fx-background-color:#1f3469;
+}
+.slideritem:hover{
+        -fx-background-color:#1f3473;
+        -fx-border-color:WHITE;
+        -fx-border-width:0px 0px 0px 5px;
+}
+.text-field-user{
+    -fx-background-color:#1f3469;
+    -fx-color:WHITE;
+}
+.button-dn:pressed {
+    -fx-background-color: #0b1a3b;
+    -fx-text-fill: #ffffff;
+}
+.mau-nen-admin{
+    -fx-background-color:#99CCCC;
+
+}

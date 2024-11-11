@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="hbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" styleClass="nen-dk" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.taixesf.DangKyController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="564.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image requestedHeight="800" url="@../images/dangky.png" />
+         </image>
+      </ImageView>
+      <VBox prefHeight="800.0" prefWidth="457.0" stylesheets="@../style.css">
+         <children>
+            <Button fx:id="thoat" mnemonicParsing="false" onAction="#troLai" styleClass="buttom-dk" stylesheets="@../style.css" text="X" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="420.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="1.0" left="8.0" right="8.0" top="1.0" />
+               </padding>
+            </Button>
+            <Label alignment="CENTER" prefHeight="27.0" prefWidth="457.0" text="PHIẾU ĐĂNG KÝ" textFill="#f04227">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" top="30.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="401.0">
+               <children>
+                  <Label prefHeight="34.0" prefWidth="82.0" text="Họ tên : " textFill="#f04227">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="hoten" promptText="Nguyễn Duy Đại...">
+                     <HBox.margin>
+                        <Insets left="30.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="26.0" prefWidth="401.0">
+               <children>
+                  <Label text="Mật khẩu :" textFill="#f04227">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" top="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="mk" prefHeight="10.0" prefWidth="199.0" promptText="12345678...">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="40.0" top="12.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="45.0" prefWidth="401.0">
+               <children>
+                  <Label prefHeight="34.0" prefWidth="52.0" text="Tuổi : " textFill="#f04227">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="age" prefHeight="26.0" prefWidth="50.0">
+                     <HBox.margin>
+                        <Insets left="2.0" top="12.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label prefHeight="34.0" prefWidth="78.0" text="Giới tính : " textFill="#f04227">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <RadioButton fx:id="nam" mnemonicParsing="false" selected="true" text="Nam" textFill="#f04227">
+                     <HBox.margin>
+                        <Insets top="14.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="nu" mnemonicParsing="false" text="Nữ" textFill="#f04227">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" top="14.0" />
+                     </HBox.margin>
+                  </RadioButton>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="20.0" prefWidth="401.0">
+               <children>
+                  <Label prefHeight="34.0" prefWidth="112.0" text="Số điện thoại : " textFill="#f04227">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="sdt" promptText="0865520508....">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="36.0" prefWidth="401.0">
+               <children>
+                  <Label prefHeight="34.0" prefWidth="62.0" text="Email :" textFill="#f04227">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" top="8.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="email" promptText="dai@gmail.com....">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="50.0" top="6.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="401.0">
+               <children>
+                  <Label prefHeight="34.0" prefWidth="62.0" text="Địa chỉ :" textFill="#f04227">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" top="8.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="diachi" prefHeight="0.0" prefWidth="199.0" promptText="Nam Định...">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="50.0" top="6.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="46.0" prefWidth="401.0">
+               <children>
+                  <Label prefHeight="34.0" prefWidth="130.0" text="Khu vực làm việc :" textFill="#f04227">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" top="8.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ComboBox fx:id="khuvuc" prefHeight="30.0" prefWidth="170.0" promptText="--- Khu vực ---" styleClass="chu" stylesheets="@../style.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" top="8.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="2.0" top="2.0" />
+                     </padding>
+                  </ComboBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="43.0" prefWidth="401.0">
+               <children>
+                  <Label prefHeight="34.0" prefWidth="101.0" text="Ảnh đại diện :" textFill="#f04227">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" top="12.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button fx:id="btnAnh" mnemonicParsing="false" onAction="#chonAnh" prefHeight="8.0" prefWidth="102.0" text="Chọn ảnh">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="12.0" right="20.0" top="12.0" />
+                     </HBox.margin>
+                  </Button>
+                  <ImageView fx:id="avatar" fitHeight="85.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="btnDangKy" layoutX="187.0" layoutY="60.0" mnemonicParsing="false" onAction="#dangKy" styleClass="buttom-dk" stylesheets="@../style.css" text="Đăng ký" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="85.0" layoutY="6.0" prefHeight="34.0" prefWidth="101.0" text="Vai trò :" textFill="#f04227">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="role" layoutX="206.0" layoutY="6.0" prefHeight="35.0" prefWidth="199.0" promptText="---Tài xế---" styleClass="chu" stylesheets="@../style.css">
+                     <padding>
+                        <Insets bottom="2.0" top="2.0" />
+                     </padding>
+                  </ComboBox>
+                  <Label fx:id="alert" alignment="CENTER" contentDisplay="CENTER" layoutY="97.0" prefHeight="58.0" prefWidth="458.0" textAlignment="CENTER" textFill="#00f73a">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</HBox>

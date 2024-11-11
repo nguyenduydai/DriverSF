@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="800.0" prefWidth="1550.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.taixesf.UserController">
+   <children>
+      <BorderPane fx:id="borderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1550.0" styleClass="duoi" stylesheets="@../style.css">
+         <left>
+            <VBox prefHeight="680.0" prefWidth="250.0" styleClass="nen-left" stylesheets="@../style.css" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="250.0" styleClass="nen-avatar" stylesheets="@../style.css">
+                     <children>
+                        <ImageView fx:id="avatar" fitHeight="120.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" styleClass="anh-avatar">
+                           <image>
+                              <Image url="@../images/dangky.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label fx:id="sdt" text="Nguyễn Duy Đại" textFill="#1f3469">
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="hoten" layoutX="74.0" layoutY="164.0" text="Nguyễn Duy Đại" textFill="#1f3469">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="-20.0" />
+                     </VBox.margin>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="nen-le" stylesheets="@../style.css">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#trangThai" prefHeight="37.0" prefWidth="252.0" styleClass="button-left2" stylesheets="@../style.css" text="Trạng thái làm việc">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="60.0" />
+                           </VBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/anhtrangthai.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnLich" mnemonicParsing="false" onAction="#xemLich" prefHeight="37.0" prefWidth="250.0" styleClass="button-left2" stylesheets="@../style.css" text="Lịch làm việc" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </VBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/anhlich.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="203.0" mnemonicParsing="false" onAction="#thongTin" prefHeight="37.0" prefWidth="250.0" styleClass="button-left2" text="Thông tin cá nhân" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </VBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/anhtt.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="145.0" mnemonicParsing="false" onAction="#xemvi" prefHeight="54.0" prefWidth="250.0" styleClass="button-left2" text="Ví - thu nhập" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </VBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/anhvi.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="213.0" mnemonicParsing="false" onAction="#xemthongbao" prefHeight="54.0" prefWidth="250.0" styleClass="button-left2" text="Thông báo" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/anhchuongg.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="271.0" mnemonicParsing="false" onAction="#xemLich" prefHeight="37.0" prefWidth="251.0" styleClass="button-left2" text="Trung tâm hỗ trợ" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </VBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/anhhotro.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="328.0" mnemonicParsing="false" onAction="#xemLich" prefHeight="37.0" prefWidth="250.0" styleClass="button-left2" text="Cài đặt">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/anhcaidat.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <VBox prefHeight="680.0" prefWidth="849.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="679.0" fitWidth="1186.0" pickOnBounds="true" preserveRatio="true" scaleX="1.13" translateX="75.0">
+                     <image>
+                        <Image url="@../images/anhlamviec.png" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+                  <Pane prefHeight="83.0" prefWidth="981.0" styleClass="duoi" stylesheets="@../style.css">
+                     <children>
+                        <Button fx:id="sansang" layoutX="477.0" layoutY="14.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="404.0" styleClass="lv" stylesheets="@../style.css" text="&gt;&gt;&gt; Sẵn sàng làm việc &gt;&gt;&gt;" textFill="#fcfcfc">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </center>
+         <top>
+            <HBox prefHeight="50.0" prefWidth="1100.0" styleClass="nen-left" stylesheets="@../style.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="100.0" prefWidth="250.0" styleClass="nen-avatar-t" stylesheets="@../style.css" />
+                  <Pane prefHeight="50.0" prefWidth="1022.0">
+                     <children>
+                        <Label layoutX="76.0" prefHeight="51.0" prefWidth="918.0" text="ShopeeFood luôn sẵn sàng hợp tác với các Tài xế để cùng mang lại dịch vụ giao nhận tối ưu cho hàng triệu khách hàng" textFill="#f7f7f7">
+                           <font>
+                              <Font name="System Bold Italic" size="16.0" />
+                           </font>
+                        </Label>
+                     </children></Pane>
+                  <Button mnemonicParsing="false" prefHeight="49.0" prefWidth="61.0" styleClass="nen-left" stylesheets="@../style.css" textFill="#1f3469">
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="nen-left">
+                           <image>
+                              <Image url="@../images/thu2.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="1214.0" layoutY="10.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="61.0" styleClass="nen-left" stylesheets="@../style.css" textFill="#1f3469">
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="nen-left">
+                           <image>
+                              <Image url="@../images/dt.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="49.0" prefWidth="70.0" styleClass="nen-left" stylesheets="@../style.css">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/chuong3.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#troLai" prefHeight="49.0" prefWidth="70.0" styleClass="nen-left" stylesheets="@../style.css">
+                     <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true" scaleX="-1.0" styleClass="thoat">
+                           <image>
+                              <Image url="@../images/thoat2.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

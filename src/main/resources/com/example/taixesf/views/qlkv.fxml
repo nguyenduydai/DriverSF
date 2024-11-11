@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="690.0" prefWidth="1300.0" styleClass="mau-nen-admin" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.taixesf.AdminAreaController">
+   <children>
+      <Label layoutX="247.0" layoutY="126.0" text="Các khu vực hiện tại :" textFill="#1f3469">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ListView fx:id="listkv" layoutX="246.0" layoutY="161.0" prefHeight="202.0" prefWidth="200.0" />
+      <ListView fx:id="listkvcon" layoutX="568.0" layoutY="161.0" prefHeight="201.0" prefWidth="200.0" />
+      <Label layoutX="568.0" layoutY="126.0" text="Các khu vực con :" textFill="#1f3469">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="363.0" layoutY="425.0" mnemonicParsing="false" onAction="#them" styleClass="button-left" text="Thêm mới">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="614.0" layoutY="425.0" mnemonicParsing="false" onAction="#sua" styleClass="button-left" text="Sửa ">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="805.0" layoutY="425.0" mnemonicParsing="false" onAction="#xoa" styleClass="button-left" text="Xóa">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="990.0" layoutY="113.0" mnemonicParsing="false" onAction="#thoat" styleClass="button-left" text="Thoát">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <TextField fx:id="kv" layoutX="400.0" layoutY="524.0" prefHeight="37.0" prefWidth="180.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="274.0" layoutY="530.0" text=" Tên khu vực :" textFill="#1f3469">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="646.0" layoutY="530.0" text=" Khu vực con :" textFill="#1f3469">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="kvcon" layoutX="765.0" layoutY="524.0" prefHeight="37.0" prefWidth="180.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="459.0" layoutY="35.0" text="DANH SÁCH CÁC KHU VỰC" textFill="#1f3469">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

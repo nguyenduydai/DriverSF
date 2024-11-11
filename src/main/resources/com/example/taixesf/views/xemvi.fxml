@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="700.0" prefWidth="1300.0" styleClass="duoi" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.taixesf.XemViController">
+   <children>
+      <Label layoutX="545.0" layoutY="98.0" text="Tài khoản chính" textFill="#fdd6b7">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="tien" alignment="CENTER" layoutX="448.0" layoutY="185.0" prefHeight="70.0" prefWidth="402.0" text="Label" textFill="#fdd6b7">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="385.0" layoutY="297.0" prefHeight="162.0" prefWidth="530.0" styleClass="nen-dk">
+         <children>
+            <Button layoutX="43.0" layoutY="41.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="200.0" styleClass="button-left" stylesheets="@../style.css" text="Nạp tiền" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button layoutX="288.0" layoutY="41.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="200.0" styleClass="button-left" stylesheets="@../style.css" text="Rút tiền" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button layoutX="381.0" layoutY="538.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="537.0" styleClass="button-left" stylesheets="@../style.css" text="&gt;                     Lịch sử giao dịch                  &gt;" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

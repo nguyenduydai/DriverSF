@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="690.0" prefWidth="1300.0" styleClass="nen-dk" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.taixesf.AdminCaXemController">
+   <children>
+      <Label layoutX="524.0" layoutY="35.0" text="CHI TIẾT CA LÀM VIỆC">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="301.0" layoutY="108.0" text="Tên ca :" textFill="#1f3469">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ten" disable="true" layoutX="397.0" layoutY="102.0" prefHeight="37.0" prefWidth="189.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="667.0" layoutY="108.0" text="Khu vực :" textFill="#1f3469">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="kv" disable="true" layoutX="770.0" layoutY="102.0" prefHeight="37.0" prefWidth="189.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="301.0" layoutY="178.0" text="Ngày :" textFill="#1f3469">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="date" layoutX="397.0" layoutY="172.0" prefHeight="38.0" prefWidth="189.0" />
+      <Label layoutX="667.0" layoutY="178.0" text="Tiền/đơn :" textFill="#1f3469">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tien" layoutX="770.0" layoutY="172.0" prefHeight="37.0" prefWidth="189.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="301.0" layoutY="254.0" text="Trạng thái :" textFill="#1f3469">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tt" disable="true" layoutX="397.0" layoutY="248.0" prefHeight="37.0" prefWidth="189.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="667.0" layoutY="254.0" text="Số tài xế còn lại :" textFill="#1f3469">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="sltx" layoutX="822.0" layoutY="248.0" prefHeight="38.0" prefWidth="138.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="259.0" layoutY="347.0" text="Danh sách tài xế trong ca :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="259.0" layoutY="380.0" prefHeight="218.0" prefWidth="750.0">
+         <columns>
+            <TableColumn fx:id="idCol" prefWidth="40.0" text="ID" />
+            <TableColumn fx:id="nameCol" prefWidth="116.0" text="Họ tên" />
+            <TableColumn fx:id="phoneCol" text="Số điện thoại" />
+            <TableColumn fx:id="imageCol" prefWidth="120.0" text="Hình ảnh" />
+            <TableColumn fx:id="ageCol" prefWidth="41.60003662109375" text="Tuổi" />
+            <TableColumn fx:id="sexCol" prefWidth="60.0" text="Giới tính" />
+            <TableColumn fx:id="emailCol" prefWidth="100.0" text="Email" />
+            <TableColumn fx:id="hometownCol" prefWidth="90.0" text="Quê quán" />
+            <TableColumn fx:id="monthCol" minWidth="3.20001220703125" prefWidth="100.0" text="Thâm niên" />
+         </columns>
+      </TableView>
+      <Button layoutX="512.0" layoutY="309.0" mnemonicParsing="false" onAction="#sua" prefHeight="37.0" prefWidth="74.0" styleClass="button-left" text="Sửa">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="763.0" layoutY="309.0" mnemonicParsing="false" onAction="#thoat" prefHeight="37.0" prefWidth="74.0" styleClass="button-left" text="Thoát">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="640.0" layoutY="309.0" mnemonicParsing="false" onAction="#xoa" prefHeight="37.0" prefWidth="74.0" styleClass="button-left" text="Xóa">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
